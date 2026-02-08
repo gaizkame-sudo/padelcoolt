@@ -1,0 +1,61 @@
+{
+  "coachAgenda": [
+    {
+      "id": "c1",
+      "time": "17:00",
+      "title": "Tecnica de bandeja",
+      "detail": "Grupo competicion (6 jugadores)"
+    },
+    {
+      "id": "c2",
+      "time": "18:30",
+      "title": "Salida de pared + transicion",
+      "detail": "Adultos intermedio (8 jugadores)"
+    },
+    {
+      "id": "c3",
+      "time": "20:00",
+      "title": "Partido condicionado",
+      "detail": "Foco en toma de decision bajo presion"
+    }
+  ],
+  "playerSessions": [
+    {
+      "date": "2026-02-03",
+      "focus": "Bandeja y volea",
+      "score": 7.8
+    },
+    {
+      "date": "2026-02-01",
+      "focus": "Direccion de globo",
+      "score": 7.2
+    },
+    {
+      "date": "2026-01-29",
+      "focus": "Defensa pared de reves",
+      "score": 7.5
+    }
+  ],
+  "scAthletes": [
+    {
+      "name": "Lucia",
+      "load": "Alta",
+      "note": "Sin molestias, mantener volumen"
+    },
+    {
+      "name": "Javi",
+      "load": "Media",
+      "note": "Reducir impacto por hombro derecho"
+    },
+    {
+      "name": "Irene",
+      "load": "Alta",
+      "note": "Buena respuesta en potencia lateral"
+    },
+    {
+      "name": "Mario",
+      "load": "Baja",
+      "note": "Retorno progresivo tras sobrecarga"
+    }
+  ]
+}

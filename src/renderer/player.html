@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PadelPro | Jugador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="role-page">
+    <div class="grain"></div>
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="logo">padel<span>pro</span></a>
+        <div class="nav-links">
+          <a href="index.html#roles">Perfiles</a>
+          <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">Tema</button>
+        </div>
+      </div>
+    </nav>
+    <header class="role-top">
+      <a href="index.html" class="role-breadcrumb">← Volver al inicio</a>
+    </header>
+    <main class="role-main">
+      <section class="panel">
+        <h1>Área de Jugador</h1>
+        <p>Revisa sesiones, mira tus clips y sigue la evolución de tus golpes y decisiones tácticas.</p>
+        <div class="quick-grid">
+          <div class="chip">Último radar de rendimiento</div>
+          <div class="chip">Revisión de volea y bandeja</div>
+          <div class="chip">Notas del coach</div>
+          <div class="chip">Próximas sesiones</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Resumen</h2>
+        <div class="quick-grid" id="player-metrics-content">
+          <div class="chip">Cargando métricas...</div>
+        </div>
+        <h3>Últimas sesiones</h3>
+        <div class="list" id="player-sessions-content">
+          <div class="list-item"><span>Cargando sesiones...</span></div>
+        </div>
+      </section>
+    </main>
+    <script src="renderer.js"></script>
+  </body>
+</html>

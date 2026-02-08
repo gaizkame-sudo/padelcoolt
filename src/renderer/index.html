@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PadelPro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="landing-page">
+    <div class="grain"></div>
+
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="logo">padel<span>pro</span></a>
+        <div class="nav-links">
+          <a href="#roles">Empezar</a>
+          <a href="#features">Funciones</a>
+          <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">Tema</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Plataforma de entrenamiento profesional
+      </div>
+      <h1>
+        <span class="line line-1">Tu pádel.</span>
+        <span class="line line-2">Otro nivel.</span>
+      </h1>
+      <p class="hero-sub">Sesiones inteligentes. Feedback con vídeo. Progresión medible.</p>
+      <a href="#roles" class="scroll-cta">
+        <span>Elige tu perfil</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7" /></svg>
+      </a>
+    </section>
+
+    <section class="roles" id="roles">
+      <p class="section-label">Selecciona tu perfil</p>
+      <h2 class="section-title">¿Cómo quieres usar PadelPro?</h2>
+
+      <div class="cards">
+        <article class="card" data-role="coach" data-target="coach.html" tabindex="0">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
+              <rect x="6" y="10" width="36" height="28" rx="4" stroke="currentColor" stroke-width="2" />
+              <path d="M6 18h36" stroke="currentColor" stroke-width="2" />
+              <circle cx="16" cy="30" r="3" stroke="currentColor" stroke-width="1.5" />
+              <circle cx="32" cy="30" r="3" stroke="currentColor" stroke-width="1.5" />
+              <path d="M19 30h10" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 3" />
+            </svg>
+          </div>
+          <h3>Entrenador</h3>
+          <p>Diseña sesiones, gestiona jugadores y genera feedback profesional con vídeo y métricas.</p>
+          <ul class="card-features">
+            <li>Diseñador de sesiones</li>
+            <li>Programas 1-10 sesiones</li>
+            <li>Feedback PDF con radar</li>
+            <li>Clips de vídeo integrados</li>
+          </ul>
+          <div class="card-action">
+            <span>Entrar como Entrenador</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+          </div>
+        </article>
+
+        <article class="card" data-role="player" data-target="player.html" tabindex="0">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="15" r="8" stroke="currentColor" stroke-width="2" />
+              <path d="M10 42c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3>Jugador</h3>
+          <p>Accede a tus sesiones, revisa feedback, mira clips y sigue tu progresión.</p>
+          <ul class="card-features">
+            <li>Historial de sesiones</li>
+            <li>Radar de rendimiento</li>
+            <li>Vídeos y notas del coach</li>
+            <li>Próximas sesiones</li>
+          </ul>
+          <div class="card-action">
+            <span>Entrar como Jugador</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+          </div>
+        </article>
+
+        <article class="card" data-role="sc" data-target="sc.html" tabindex="0">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg width="44" height="44" viewBox="0 0 48 48" fill="none">
+              <rect x="19" y="8" width="10" height="32" rx="2" stroke="currentColor" stroke-width="2" />
+              <rect x="7" y="16" width="12" height="16" rx="2" stroke="currentColor" stroke-width="2" />
+              <rect x="29" y="16" width="12" height="16" rx="2" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h3>S&C</h3>
+          <p>Fuerza y acondicionamiento específico para pádel. Tren superior, inferior y core.</p>
+          <ul class="card-features">
+            <li>Circuitos tren superior</li>
+            <li>Agilidad tren inferior</li>
+            <li>Core anti-rotación</li>
+            <li>Integración con sesión</li>
+          </ul>
+          <div class="card-action">
+            <span>Entrar como S&C</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="features-inner">
+        <div class="feat">
+          <span class="feat-num">01</span>
+          <h4>Sesiones inteligentes</h4>
+          <p>Nivel, táctica, golpes, dirección, velocidad, ritmo configurable en un clic.</p>
+        </div>
+        <div class="feat">
+          <span class="feat-num">02</span>
+          <h4>Feedback con vídeo</h4>
+          <p>Adjunta clips de móvil o Ray-Ban. Radar spider de rendimiento y notas.</p>
+        </div>
+        <div class="feat">
+          <span class="feat-num">03</span>
+          <h4>Programas progresivos</h4>
+          <p>De 1 a 10 sesiones con estructura, seguimiento y progresión real.</p>
+        </div>
+        <div class="feat">
+          <span class="feat-num">04</span>
+          <h4>PDF compartible</h4>
+          <p>Genera y envía por email, SMS o WhatsApp. Profesional.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <a href="index.html" class="logo logo-sm">padel<span>pro</span></a>
+        <p>Sunshine Coast, QLD - Australia</p>
+      </div>
+    </footer>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SE QLD Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">South East QLD</p>
+          <h1>Coastal + AI Intelligence Hub</h1>
+          <p class="subhead">Tides, surf, inbox signals, and AI/LLM headlines in one focused view.</p>
+        </div>
+        <div class="clock" id="clock"></div>
+      </header>
+
+      <main class="grid">
+        <section class="card" id="tides-card">
+          <div class="card-header">
+            <h2>Tides</h2>
+            <select id="tide-station"></select>
+          </div>
+          <div class="card-body" id="tides-content">
+            <p class="muted">Loading tide data...</p>
+          </div>
+        </section>
+
+        <section class="card" id="surf-card">
+          <div class="card-header">
+            <h2>Surf Report</h2>
+            <span class="tag" id="surf-provider">Stormglass</span>
+            <select id="surf-spot"></select>
+          </div>
+          <div class="card-body" id="surf-content">
+            <p class="muted">Loading surf data...</p>
+          </div>
+        </section>
+
+        <section class="card" id="email-card">
+          <div class="card-header">
+            <h2>Inbox</h2>
+            <button class="ghost" id="open-settings">Settings</button>
+          </div>
+          <div class="card-body" id="email-content">
+            <p class="muted">Checking email connections...</p>
+          </div>
+        </section>
+
+        <section class="card" id="news-card">
+          <div class="card-header">
+            <h2>AI + LLM News</h2>
+            <span class="tag">Last 7 days</span>
+          </div>
+          <div class="card-body" id="news-content">
+            <p class="muted">Loading news...</p>
+          </div>
+        </section>
+
+        <section class="card wide hidden" id="settings-card">
+          <div class="card-header">
+            <h2>Settings</h2>
+            <button class="ghost" id="close-settings">Close</button>
+          </div>
+          <div class="card-body">
+            <div class="settings-grid">
+              <div>
+                <h3>Stormglass API</h3>
+                <p class="muted">Required for surf report data.</p>
+                <input type="password" id="stormglass-key" placeholder="Paste API key" />
+                <button class="primary" id="save-stormglass">Save Surf Settings</button>
+              </div>
+              <div>
+                <h3>Surf Provider</h3>
+                <p class="muted">Pick the data source for surf forecasts.</p>
+                <select id="surf-provider-select">
+                  <option value="stormglass">Stormglass</option>
+                  <option value="swellcloud">Swellcloud</option>
+                </select>
+                <p class="muted">Swellcloud needs its own API key.</p>
+                <input type="password" id="swellcloud-key" placeholder="Swellcloud API key" />
+                <select id="swellcloud-model">
+                  <option value="gfs">Swellcloud (GFS)</option>
+                  <option value="cmems-global">CMEMS Global High-Res</option>
+                </select>
+                <select id="swellcloud-units">
+                  <option value="si">SI (m, m/s)</option>
+                  <option value="uk">UK (ft, mph)</option>
+                </select>
+              </div>
+              <div>
+                <h3>Gmail OAuth</h3>
+                <p class="muted">Add OAuth credentials to enable Gmail.</p>
+                <input type="text" id="gmail-client-id" placeholder="Client ID" />
+                <input type="password" id="gmail-client-secret" placeholder="Client Secret" />
+                <button class="ghost" id="connect-gmail">Open Google Console</button>
+              </div>
+              <div>
+                <h3>Outlook OAuth</h3>
+                <p class="muted">Register an app in Azure for Outlook.</p>
+                <input type="text" id="outlook-client-id" placeholder="Client ID" />
+                <input type="text" id="outlook-tenant-id" placeholder="Tenant ID" />
+                <button class="ghost" id="connect-outlook">Open Azure Portal</button>
+              </div>
+            </div>
+            <div class="settings-actions">
+              <button class="primary" id="save-email">Save Email Settings</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

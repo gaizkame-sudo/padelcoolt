@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PadelPro | Entrenador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="role-page">
+    <div class="grain"></div>
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="logo">padel<span>pro</span></a>
+        <div class="nav-links">
+          <a href="index.html#roles">Perfiles</a>
+          <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">Tema</button>
+        </div>
+      </div>
+    </nav>
+    <header class="role-top">
+      <a href="index.html" class="role-breadcrumb">← Volver al inicio</a>
+    </header>
+    <main class="role-main">
+      <section class="panel">
+        <h1>Panel de Entrenador</h1>
+        <p>Planifica sesiones, define objetivos tácticos y comparte feedback profesional en cada bloque de entrenamiento.</p>
+        <div class="quick-grid">
+          <div class="chip">Diseñar sesión rápida</div>
+          <div class="chip">Crear programa de 10 semanas</div>
+          <div class="chip">Subir clips y etiquetar errores</div>
+          <div class="chip">Exportar feedback en PDF</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Agenda de hoy</h2>
+        <div class="list" id="coach-agenda-content">
+          <div class="list-item"><span>Cargando agenda...</span></div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Flujo recomendado</h2>
+        <div class="list">
+          <div class="list-item">
+            <strong>1. Planifica sesión</strong>
+            <span>Define objetivo, ritmo y progresión técnica.</span>
+          </div>
+          <div class="list-item">
+            <strong>2. Ejecuta y graba clips</strong>
+            <span>Marca acciones clave para feedback rápido.</span>
+          </div>
+          <div class="list-item">
+            <strong>3. Entrega reporte</strong>
+            <span>Comparte PDF con radar y próximos focos.</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="renderer.js"></script>
+  </body>
+</html>

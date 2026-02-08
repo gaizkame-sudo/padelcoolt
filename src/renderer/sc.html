@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PadelPro | S&C</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="role-page">
+    <div class="grain"></div>
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="logo">padel<span>pro</span></a>
+        <div class="nav-links">
+          <a href="index.html#roles">Perfiles</a>
+          <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">Tema</button>
+        </div>
+      </div>
+    </nav>
+    <header class="role-top">
+      <a href="index.html" class="role-breadcrumb">← Volver al inicio</a>
+    </header>
+    <main class="role-main">
+      <section class="panel">
+        <h1>Panel S&C</h1>
+        <p>Programa fuerza, movilidad y acondicionamiento específico para pádel con seguimiento semanal.</p>
+        <div class="quick-grid">
+          <div class="chip">Circuito tren superior</div>
+          <div class="chip">Agilidad tren inferior</div>
+          <div class="chip">Core anti-rotación</div>
+          <div class="chip">Prevención de sobrecargas</div>
+        </div>
+      </section>
+      <section class="panel">
+        <h2>Bloques activos</h2>
+        <div class="quick-grid" id="sc-metrics-content">
+          <div class="chip">Cargando carga semanal...</div>
+        </div>
+        <h3>Estado por atleta</h3>
+        <div class="list" id="sc-athletes-content">
+          <div class="list-item"><span>Cargando atletas...</span></div>
+        </div>
+      </section>
+    </main>
+    <script src="renderer.js"></script>
+  </body>
+</html>
