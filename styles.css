@@ -1061,6 +1061,14 @@
       font-size: 2rem;
       line-height: 0.9;
       letter-spacing: 0.03em;
+      color: var(--ink);
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 200ms ease;
+    }
+
+    .offer-now:hover {
+      opacity: 0.7;
     }
 
     .offer-save {
@@ -1070,6 +1078,14 @@
       line-height: 0.9;
       letter-spacing: 0.03em;
       white-space: nowrap;
+      color: var(--ink);
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 200ms ease;
+    }
+
+    .offer-save:hover {
+      opacity: 0.7;
     }
 
     .sales-points {
