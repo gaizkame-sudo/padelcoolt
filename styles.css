@@ -987,6 +987,16 @@
       background: #fff8e6;
     }
 
+    .poster-price {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 2.2rem;
+      line-height: 1;
+      letter-spacing: 0.03em;
+      font-weight: 400;
+      text-align: center;
+      display: block;
+    }
+
     .ebook-poster small {
       font-weight: 800;
       font-size: 0.74rem;
