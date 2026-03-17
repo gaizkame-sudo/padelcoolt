@@ -1449,6 +1449,22 @@
       line-height: 1.5;
     }
 
+    .footer-author {
+      border-top: var(--line);
+      padding: 24px 28px;
+      text-align: center;
+      background: rgba(255,255,255,0.35);
+    }
+
+    .footer-author span {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
     .footer-note {
       border-top: var(--line);
       padding: 18px 28px 22px;
