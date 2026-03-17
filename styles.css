@@ -21,6 +21,28 @@
       min-height: 100%;
     }
 
+    /* --- TEASER SECTION --- */
+    .teaser-section {
+      padding: 42px;
+      background-color: var(--sky);
+      border-bottom: var(--line);
+      text-align: center;
+    }
+
+    .teaser-embed {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .teaser-embed iframe {
+      border: var(--line);
+      border-radius: 12px;
+      box-shadow: 6px 7px 0 rgba(16,16,16,0.95);
+      background: var(--paper);
+    }
+
     body {
       font-family: "Manrope", system-ui, sans-serif;
       color: var(--ink);
