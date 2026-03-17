@@ -1325,7 +1325,17 @@
 
     .btn-large {
       font-size: 3rem;
-      padding: 4px 0;
+      padding: 16px 32px;
+      border: var(--line);
+      border-radius: 999px;
+      background: var(--bg);
+      box-shadow: 6px 7px 0 rgba(16,16,16,0.95);
+      transition: transform 150ms ease, box-shadow 150ms ease;
+    }
+
+    .btn-large:hover {
+      transform: translateY(-2px);
+      box-shadow: 8px 9px 0 rgba(16,16,16,0.95);
     }
 
     .testimonials {
