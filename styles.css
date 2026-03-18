@@ -1049,8 +1049,10 @@
       grid-template-rows: auto auto auto 1fr auto;
     }
 
-    .ebook-body stripe-buy-button {
+    .ebook-body .payhip-buy-button {
       align-self: end;
+      justify-self: start;
+      max-width: 200px;
     }
 
     .ebook-heading {
