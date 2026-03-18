@@ -958,6 +958,7 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 18px;
+      align-items: stretch;
     }
 
     .ebook-card {
@@ -969,7 +970,7 @@
       display: grid;
       gap: 16px;
       grid-template-columns: 170px 1fr;
-      align-items: start;
+      align-items: stretch;
       transition: transform 150ms ease;
       min-height: 320px;
     }
@@ -1045,7 +1046,11 @@
     .ebook-body {
       display: grid;
       gap: 14px;
-      align-content: start;
+      grid-template-rows: auto auto auto 1fr auto;
+    }
+
+    .ebook-body stripe-buy-button {
+      align-self: end;
     }
 
     .ebook-heading {
