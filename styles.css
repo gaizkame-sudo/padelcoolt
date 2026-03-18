@@ -1056,8 +1056,8 @@
     .sales-title {
       margin: 0;
       font-family: "Bebas Neue", sans-serif;
-      font-size: clamp(4rem, 7vw, 7rem);
-      line-height: 0.88;
+      font-size: clamp(1.8rem, 2.8vw, 2.6rem);
+      line-height: 0.92;
       letter-spacing: 0.04em;
       text-transform: uppercase;
     }
@@ -1189,6 +1189,25 @@
       font-size: 0.83rem;
       font-weight: 800;
       line-height: 1.35;
+    }
+
+    .ebook-body .btn {
+      font-size: 1rem;
+      padding: 12px 22px;
+      border: var(--line);
+      border-radius: 999px;
+      background: var(--ink);
+      color: #fff;
+      box-shadow: 4px 4px 0 rgba(16,16,16,0.25);
+      letter-spacing: 0.08em;
+      transition: transform 150ms ease, box-shadow 150ms ease;
+      justify-self: start;
+    }
+
+    .ebook-body .btn:hover {
+      opacity: 1;
+      transform: translateY(-2px);
+      box-shadow: 6px 6px 0 rgba(16,16,16,0.25);
     }
 
     .ebook-footer {
