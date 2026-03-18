@@ -1051,7 +1051,7 @@
 
     .ebook-body .payhip-buy-button {
       align-self: end;
-      justify-self: start;
+      justify-self: center;
       max-width: 200px;
     }
 
