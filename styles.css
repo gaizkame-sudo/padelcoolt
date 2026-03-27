@@ -1448,7 +1448,7 @@
     .reviews-track {
       display: flex;
       gap: 20px;
-      animation: scroll-reviews 60s linear infinite;
+      animation: scroll-reviews 20s linear infinite;
     }
 
     @keyframes scroll-reviews {
